@@ -1,0 +1,22 @@
+<form #personalForm="ngForm" class="editForm" novalidate>
+    <div class="tab-pane fade in active">
+        <h4 class="head text-center">{{title}}</h4>
+        <br/>
+        <div class='row'>
+            <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8'>
+                <div class="row">
+                    <div class='col-xs-12 col-sm-6' align="center">
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary btn-lg" (click)="goToNext(personalForm)">Latino</button>
+                        </div>
+                    </div>
+                    <div class='col-xs-12 col-sm-6' align="center">
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary btn-lg" (click)="goToNext(personalForm)">Black</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

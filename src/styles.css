@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css");
+@import "assets/css/riliwan-rabo.css";
+@import "assets/css/style.css";
+@import "assets/css/form.css";
+@import "assets/css/loading-bars.css";
+
+.tab-content {
+    border-radius: 10px;
+    background-color: #C2C1C0;
+    padding-bottom: 20px;
+}
+
+.board {
+    width: 100% !important;
+}
+
+.tab-pane .row {
+    margin-right: 0;
+    margin-left: 0;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tab-pane .row .left-pane {
+    background-color: #a8d27d;
+}
+
+.tab-pane .row .middle-pane {
+    background-color: #92cddb;
+}
+
+.tab-pane .row .right-pane {
+    background-color: #edad72;
+}

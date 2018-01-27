@@ -1,0 +1,61 @@
+<form #personalForm="ngForm" class="editForm" novalidate>
+    <div class="tab-pane fade in active">
+        <h4 class="head text-center">2018 Ranking of Bay Area Public Schools</h4>
+        <h4 class="head text-center"><b>{{title}}</b></h4>
+        <div class='row'>
+            <div class='col-sm-4'>
+                <div class="row left-pane" align="center">
+                    <h4 class="head text-center">Ethnicity</h4>
+                    <div class="row">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-primary">
+                                <input type="radio" 
+                                id="option1" 
+                                name="options" 
+                                [(ngModel)]="ethnicity"
+                                (ngModelChange)="onModelChange($event)" 
+                                autocomplete="off">Latino
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" [(ngModel)]="ethnicity" id="option2" autocomplete="off">Black
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-sm-4'>
+                <div class="row middle-pane" align="center">
+                    <h4 class="head text-center">Subject</h4>
+                    <div class="row">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option1" autocomplete="off">English
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option2" autocomplete="off">Math
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-sm-4'>
+                <div class="row right-pane" align="center">
+                    <h4 class="head text-center">School Type</h4>
+                    <div class="row ">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option1" autocomplete="off">Elementary
+                            </label>
+                            <label class="btn btn-primary">
+                                    <input type="radio" name="options" id="option2" autocomplete="off">Middle School
+                                </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option2" autocomplete="off">High School
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</form>
